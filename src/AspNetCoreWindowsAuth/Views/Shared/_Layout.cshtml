@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @RenderSection(name: "Styles", required: false)
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Production, Staging">
+        <link rel="stylesheet" href="~/css/site.min.css" />
+    </environment>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    @RenderSection(name: "Scripts", required: false)
+
+    <environment names="Development">
+        <script type="text/javascript" src="~/js/site.js"></script>
+    </environment>
+    <environment names="Staging, Production">
+        <script type="text/javascript" src="~/js/site.min.js"></script>
+    </environment>
+</body>
+</html>
