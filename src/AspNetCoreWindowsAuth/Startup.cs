@@ -16,11 +16,6 @@ namespace AspNetCoreWindowsAuth
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.Configure<IISOptions>(options =>
-            //{
-            //    options.ForwardWindowsAuthentication = true;
-            //});
-
             services.AddMvc();
         }
 
@@ -44,11 +39,6 @@ namespace AspNetCoreWindowsAuth
             //        template: "{controller}/{action}/{id?}",
             //        defaults: new { controller = "Home", action = "Index" }
             //    );
-            //});
-
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
             //});
         }
     }
