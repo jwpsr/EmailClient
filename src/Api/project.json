@@ -2,6 +2,7 @@
   "dependencies": {
     "Data": "1.0.0-*",
     "Domain": "1.0.0-*",
+    "Microsoft.AspNetCore.Cors": "1.1.0",
     "Microsoft.AspNetCore.Diagnostics": "1.1.0",
     "Microsoft.AspNetCore.Mvc": "1.1.1",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",

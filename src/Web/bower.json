@@ -6,6 +6,7 @@
     "bootstrap": "latest",
     "angular": "latest",
     "tinymce": "latest",
+    "angular-ui-tinymce": "latest",
     "font-awesome": "latest",
     "angular-route": "latest"
   }

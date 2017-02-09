@@ -23,7 +23,12 @@ namespace Api.Controllers
         [Route("TemplateNames")]
         public IActionResult TemplateNames()
         {
-            var templateNames = db.EmailTemplates.Select(x => x.Title).ToList();
+            var templateNames = db.EmailTemplates
+                .Select(x => new
+                {
+                    Title = x.Title
+                })
+                .ToList();
 
             return Ok(templateNames);
         }

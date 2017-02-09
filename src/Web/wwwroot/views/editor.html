@@ -1,9 +1,17 @@
 ﻿<div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <h3>To: {{ email.to.join(',') }}</h3>
-        <h3>Subject: {{ email.subject }}</h3>
-        <textarea>
-            {{ email.body }}
-        </textarea>
+        <div class="dropdown" ng-model="templates">
+            <button class="btn btn-default dropdown-toggle" type="button" id="templateDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Templates
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="templateDropdown" ng-repeat="template in templates">
+                <li><a href="#">{{ template.title.trim() }}</a></li>
+            </ul>
+        </div>
+        <!--<select ng-model="templates">
+            <option ng-repeat="template in templates track by $index" value="{{ template.title.trim() }}">{{ template.title.trim() }}</option>
+        </select>-->
+        <textarea ui-tinymce="options" ng-model="editor.content"></textarea>
     </div>
 </div>

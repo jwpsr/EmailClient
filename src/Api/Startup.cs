@@ -44,6 +44,11 @@ namespace Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseCors(builder => builder.AllowAnyOrigin());
+            }
+            else
+            {
+                //app.UseCors(builder => builder.WithOrigins("http://example.com"));
             }
 
             app.UseMvc();
