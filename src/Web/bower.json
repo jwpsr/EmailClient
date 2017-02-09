@@ -2,10 +2,11 @@
   "name": "asp.net",
   "private": true,
   "dependencies": {
-    "jquery": "2.2.3",
-    "bootstrap": "3.3.6",
-    "angular": "1.5.5",
-    "tinymce": "^4.5.3",
-    "font-awesome": "^4.7.0"
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "angular": "latest",
+    "tinymce": "latest",
+    "font-awesome": "latest",
+    "angular-route": "latest"
   }
 }

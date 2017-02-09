@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Recipient] (
-    [Id]      INT            NOT NULL,
+    [RecipientId]      INT            NOT NULL IDENTITY,
     [Name]    VARCHAR (25)   NULL,
     [Address] NVARCHAR (255) NOT NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
+    PRIMARY KEY CLUSTERED ([RecipientId] ASC)
 );
 

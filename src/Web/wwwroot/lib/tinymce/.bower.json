@@ -26,7 +26,6 @@
     "commit": "2e662f527e6d776627b9b6c6c854d0a557169a70"
   },
   "_source": "https://github.com/tinymce/tinymce-dist.git",
-  "_target": "^4.5.3",
-  "_originalSource": "tinymce",
-  "_direct": true
+  "_target": "*",
+  "_originalSource": "tinymce"
 }

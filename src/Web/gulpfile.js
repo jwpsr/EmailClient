@@ -21,10 +21,12 @@ var paths = {
     js: webroot + "js/*.js",
     minJs: webroot + "js/**/*.min.js",
     modules: webroot + "js/modules/**/*.js",
+    config: webroot + "js/config/**/*.js",
     controllers: webroot + "js/controllers/**/*.js",
     jQueryMin: webroot + "lib/jquery/dist/*.min.js",
     ignoreJQuerySlim: "!" + webroot + "lib/jquery/dist/*.slim.min.js",
     ngMin: webroot + "lib/angular/*.min.js",
+    ngRoute: webroot + "lub/angular-rotue/*.min.js",
     bootstrapMinJs: webroot + "lib/bootstrap/dist/js/*.min.js",
     tinyMceMin: webroot + "lib/tinymce/tinymce.min.js",
     tinyMceJqueryMin: webroot + "lib/tinymce/jquery.tinymce.min.js",
@@ -47,9 +49,10 @@ gulp.task('min:js', function () {
 });
 
 gulp.task('cat:jsAll', ['min:js'], function () {
-    return gulp.src([paths.jQueryMin, paths.ignoreJQuerySlim, paths.ngMin,
+    return gulp.src([paths.jQueryMin, paths.ignoreJQuerySlim,
+            paths.ngMin, paths.ngRoute,
             paths.bootstrapMinJs, paths.tinyMceMin, paths.tinyMceJqueryMin,
-            paths.modules, paths.controllers])
+            paths.modules, paths.config, paths.controllers])
         .pipe(concat(paths.concatJsAll))
         .pipe(gulp.dest("."));
 });

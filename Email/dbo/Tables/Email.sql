@@ -1,7 +1,8 @@
 ﻿CREATE TABLE [dbo].[Email] (
-    [Id]      INT            NOT NULL,
+    [EmailId]      INT            NOT NULL IDENTITY,
     [Subject] NVARCHAR (255) NULL,
     [Body]    NVARCHAR (MAX) NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
+    [Sent] DATETIME2 NOT NULL, 
+    PRIMARY KEY CLUSTERED ([EmailId] ASC)
 );
 

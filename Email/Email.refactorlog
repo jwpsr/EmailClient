@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="d29bc695-8f07-4def-a776-00f591abbae9" ChangeDateTime="02/08/2017 22:31:30">
+    <Property Name="ElementName" Value="[dbo].[EmailRecipient].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailRecipient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmailRecipientId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="832d9021-e934-4980-abee-f38ba7655e93" ChangeDateTime="02/08/2017 22:31:57">
+    <Property Name="ElementName" Value="[dbo].[Recipient].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Recipient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RecipientId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6489d46e-b6ac-4ab5-84b5-70d109a6dbd9" ChangeDateTime="02/08/2017 22:32:06">
+    <Property Name="ElementName" Value="[dbo].[Email].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Email]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmailId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1c2d73a3-a7e3-46f3-b6b1-98e3c2883cd5" ChangeDateTime="02/08/2017 22:34:53">
+    <Property Name="ElementName" Value="[dbo].[EmailTemplate].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TemplateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e93e3ecd-a67e-4c5f-a255-9a5dc62e97a8" ChangeDateTime="02/08/2017 22:36:29">
+    <Property Name="ElementName" Value="[dbo].[EmailTemplate].[TemplateId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="19b15b71-9e3f-4c41-b255-6c05c437c32d" ChangeDateTime="02/08/2017 22:36:40">
+    <Property Name="ElementName" Value="[dbo].[EmailTemplate].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Title" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f408b997-4909-4431-825b-9ba14c048f8e" ChangeDateTime="02/08/2017 22:36:48">
+    <Property Name="ElementName" Value="[dbo].[EmailTemplate].[CreatedDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Created" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="97326a0c-0a8d-4fa2-889f-efa815b5fec7" ChangeDateTime="02/08/2017 22:36:55">
+    <Property Name="ElementName" Value="[dbo].[EmailTemplate].[Created]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreateDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f7940551-f370-43ae-a170-014897e969b5" ChangeDateTime="02/08/2017 22:37:13">
+    <Property Name="ElementName" Value="[dbo].[EmailTemplate].[CreateDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EmailTemplate]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedDate" />
+  </Operation>
+</Operations>

@@ -9,7 +9,7 @@ namespace Domain.Models
             Emails = new List<EmailRecipient>();
         }
 
-        public int Id { get; set; }
+        public int RecipientId { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
 

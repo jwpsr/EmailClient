@@ -7,7 +7,7 @@ namespace Domain.Models
 {
     public class EmailRecipient
     {
-        public int Id { get; set; }
+        public int EmailRecipientId { get; set; }
 
         public int EmailId { get; set; }
         public Email Email { get; set; }

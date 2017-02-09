@@ -46,13 +46,7 @@ namespace Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc(config =>
-            {
-                config.MapRoute(
-                    name: "default",
-                    template: "api/{controller}/{id?}"
-                );
-            });
+            app.UseMvc();
         }
     }
 }

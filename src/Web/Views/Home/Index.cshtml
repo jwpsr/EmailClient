@@ -11,22 +11,24 @@
 
 @section Scripts {
     <environment names="Development">
-        <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
-        <script type="text/javascript" src="~/lib/angular/angular.js"></script>
-        <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script type="text/javascript" src="~/lib/tinymce/tinymce.js"></script>
-        <script type="text/javascript" src="~/lib/tinymce/jquery.tinymce.js"></script>
-        <script type="text/javascript" src="~/js/modules/app-SendEmail.js"></script>
-        <script type="text/javascript" src="~/js/controllers/emailController.js"></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/angular/angular.js"></script>
+        <script src="~/lib/angular-route/angular-route.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/tinymce/tinymce.js"></script>
+        <script src="~/lib/tinymce/jquery.tinymce.js"></script>
+        <script src="~/js/modules/app.module.js"></script>
+        <script src="~/js/controllers/app.main.controller.js"></script>
+        <script src="~/js/controllers/app.sub.controller.js"></script>
+        <script src="~/js/config/app.config.js"></script>
     </environment>
     <environment names="Staging, Production">
-        <script type="text/javascript" src="~/js/all.min.js"></script>
+        <script src="~/js/all.min.js"></script>
     </environment>
 }
 
-<div ng-app="app-sendEmail">
-    <div ng-controller="emailController">
-        <div ng-include="template.url"></div>
+<div ng-app="app">
+    <div ng-controller="mainController">
+        <div ng-view></div>
     </div>
 </div>
-

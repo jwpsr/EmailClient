@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[EmailTemplate]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[Title] NCHAR(150) NOT NULL, 
+    [Content] NVARCHAR(MAX) NULL, 
+    [CreatedDate] DATETIME2 NOT NULL, 
+    [CreatedBy] UNIQUEIDENTIFIER NOT NULL, 
+    [UpdatedDate] DATETIME2 NOT NULL, 
+    [UpdatedBy] UNIQUEIDENTIFIER NOT NULL, 
+    [DeletedDate] DATETIME2 NULL, 
+    [DeletedBy] UNIQUEIDENTIFIER NULL
+)
